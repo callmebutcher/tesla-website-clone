@@ -1,0 +1,133 @@
+#fullpage.no-scroll {
+	overflow-y: hidden;
+	max-height: 100vh;
+}
+
+.section {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.background-video {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+	.background-video {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-aspect-ratio: 16/9) {
+	.background-video {
+		width: auto;
+		height: 100%;
+
+	}
+}
+
+.section.zero .section__content {
+	color: var(--secondary-color);
+}
+
+.section.zero .action__btn__primary {
+	color: var(--secondary-color);
+	border: 3px solid white;
+	background: transparent;
+}
+
+.section.one {
+	background-image: url(../media/model_3.avif);
+}
+
+.section.two {
+	background-image: url(../media/model_y.avif);
+}
+
+.section.three {
+	background-image: url(../media/model_s.avif);
+}
+
+.section.four {
+	background-image: url(../media/model_x.avif);
+}
+
+.section.five {
+	background-image: url(../media/solar_panels.avif);
+}
+
+.section.six {
+	background-image: url(../media/solar_roofs.avif);
+}
+
+.section.seven {
+	background-image: url(../media/powerwall.avif);
+}
+
+.section.eight {
+	background-image: url(../media/accessories.avif);
+}
+
+.section__content {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	text-align: center;
+	text-transform: capitalize;
+	color: var(--primary-color);
+}
+
+.section__content__title {
+	font-size: 4rem;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+
+.section__content__subtitle {
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.section__content__subtitle a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.section__action__container {
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.section__action__btn {
+	font-size: 1.5rem;
+	font-weight: 500;
+	padding: 1.2rem;
+	border-radius: 0.5rem;
+	flex-basis: 80%;
+	margin-bottom: 1rem;
+	text-transform: capitalize;
+}
+
+.action__btn__primary {
+	background: rgba(244, 244, 244, 0.8);
+	color: var(--primary-color);
+}
+
+.action__btn__secondary {
+	background: rgba(23, 26, 32, 0.5);
+	color: white;
+}
